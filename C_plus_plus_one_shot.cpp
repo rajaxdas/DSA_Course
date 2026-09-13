@@ -1,6 +1,15 @@
 #include<iostream>
 using namespace std;
-int main() {
+
+// -------Functions 
+
+    // void printName1(string name2){
+    //     cout<<"Hey "<<name2 <<endl;
+    // } 
+    // void printName(string name) {
+    //     cout<<"Hey "<<name <<endl;
+    // }
+// int main() {
     //int (it can oly store elements data from(-2,147,483,648 to 2,147,483,647))
     // int x = 10;
 
@@ -204,5 +213,83 @@ int main() {
     // }
 
 
-    return 0;
+    //while loop(runs the statement untill it became false)
+
+    // int i=1; //initilization
+    // while(i<=5) /*condition*/ {
+    //     cout<<"Raja"<<endl;  //statement
+
+    //     i = i + 1; //updation
+    // }
+
+
+    //do-while loop(runs the block of code atleast one time)
+
+    // int i = 2;
+    // do {
+    //     cout<<"Raja"<<endl;
+    //     i = i + 1;
+    // } while (i<=5);
+
+
+    //---------------------Functions---------------------
+    //Functions are set of code which performs something for you
+    //Functions are used to modularise code
+    //Functions are used to increase readability
+    //Functions are used to use same code multiple times
+    
+    
+    // We can also pass parameters in functions like...
+    // string name, name2;
+    // cout<<"Enter your name: "<<name<<endl;
+    // cin>> name >> name2;
+    // printName(name);
+    // printName1(name2);
+
+    
+    //Practice question------> Take two numbers and print its sum
+   
+    // int sum(int num1, int num2) {
+    //     int num3 = num1 + num2;
+    //     return num3;
+    // }
+    // int main() {
+    // int  num1, num2;
+    // cout<<"Enter two number: "<<endl;
+    // cin>>num1 >> num2;
+
+    // int res = sum(num1, num2);
+    // cout<<res;
+    
+    // return 0;
+
+
+//pass by value
+// void doSomething(int num) {
+//     cout << num << endl;
+//     num +=5;
+//     cout<<num << endl; 
+//     num +=5;
+//     cout<<num <<endl;
+
+// }
+//     int main() {
+//         int num = 10;
+//         doSomething(num);
+//         cout << num << endl; //the original never changed ....   
+//     }
+
+
+
+//pass by reference.....//chnage the original value
+void doSomething(string &s) {
+    s[0] = 't';
+    cout<< s << endl;
 }
+    int main() {
+        string s  = "raj";
+        doSomething(s);
+        cout << s <<endl;
+        return 0; 
+    }
+// }
