@@ -1,0 +1,56 @@
+// #include<iostream>
+// using namespace std;
+// //print stars 4x4 
+// void print1() {
+//     for(int i=0; i<4; i++) {
+//         for(int j=0; j<4; j++) {
+//             cout<<"*";
+//         }
+//         cout<<endl;
+//     }
+// }
+// int main() {
+//     print1();
+// }
+
+
+
+
+//-------->print n stars<--------
+// #include<iostream>
+// using namespace std;
+// void print2(int n) {
+//     for(int i=0; i<n; i++) {
+//         for(int j=0; j<n; j++) {
+//             cout<<"*";
+//         }
+//         cout<<endl;
+//     }
+// }
+
+
+// int main() {
+//     int n;
+//     cin>>n;
+//     print2(n);
+    
+// }
+
+
+
+#include<iostream>
+using namespace std;
+void print2(int n) {
+    for(int i=0; i<n; i++) {
+        for(int j=0; j<=i; j++) {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
+
+int main() {
+    int n;
+    cin>>n;
+    print2(n);
+}
