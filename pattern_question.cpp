@@ -168,24 +168,57 @@
 // }
 
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+// void print8(int n) {
+//         for(int i = 1; i<=2*n-i; i++) {
+//                 int stars = i;
+//                 if( i>n ) stars = 2*n-i;
+//                 for(int j=1; j<=stars; j++) {
+//                         cout<<"*";
+//                 }
+//                 cout<<endl;
+//         }
+// }
+// int main() {
+//         int t;
+//         cin>> t;
+//         for(int i=0; i<t; i++) {
+//                 int n; 
+//                 cin>>n;
+//                 print8(n);
+//         }
+// }
+
+
+
+
+
+#include <iostream>
 using namespace std;
-void print8(int n) {
-        for(int i = 1; i<=2*n-i; i++) {
-                int stars = i;
-                if( i>n ) stars = 2*n-i;
-                for(int j=1; j<=stars; j++) {
-                        cout<<"*";
-                }
-                cout<<endl;
+
+void print9(int n) {
+    for (int i = 0; i < n; i++) {
+        int start = (i % 2 == 0) ? 0 : 1;
+
+        for (int j = 0; j <= i; j++) {
+            cout << start;
+            start = 1 - start;
         }
+
+        cout << endl;
+    }
 }
+
 int main() {
-        int t;
-        cin>> t;
-        for(int i=0; i<t; i++) {
-                int n; 
-                cin>>n;
-                print8(n);
-        }
+    int t;
+    cin >> t;
+
+    for (int i = 0; i < t; i++) {
+        int n;
+        cin >> n;
+        print9(n);
+    }
+
+    return 0;
 }
