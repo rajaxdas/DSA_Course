@@ -1,5 +1,5 @@
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
 // -------Functions 
 
@@ -10,7 +10,7 @@ using namespace std;
     //     cout<<"Hey "<<name <<endl;
     // }
 // int main() {
-    //int (it can oly store elements data from(-2,147,483,648 to 2,147,483,647))
+    //int (it can only store elements data from(-2,147,483,648 to 2,147,483,647))
     // int x = 10;
 
     //long (same as int but it have larger range of values)
@@ -282,14 +282,14 @@ using namespace std;
 
 
 //pass by reference.....//chnage the original value
-void doSomething(string &s) {
-    s[0] = 't';
-    cout<< s << endl;
-}
-    int main() {
-        string s  = "raj";
-        doSomething(s);
-        cout << s <<endl;
-        return 0; 
-    }
+// void doSomething(string &s) {
+//     s[0] = 't';
+//     cout<< s << endl;
+// }
+//     int main() {
+//         string s  = "raj";
+//         doSomething(s);
+//         cout << s <<endl;
+//         return 0; 
+//     }
 // }
