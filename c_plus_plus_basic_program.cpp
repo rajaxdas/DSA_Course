@@ -17,7 +17,7 @@
 // }
 
 
-// factorail of a number....
+// factroiall of a number....
 // #include<iostream>
 // using namespace std;
 // int main() {
