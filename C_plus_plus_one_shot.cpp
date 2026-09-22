@@ -13,6 +13,7 @@
     //int (it can only store elements data from(-2,147,483,648 to 2,147,483,647))
     // int x = 10;
 
+
     //long (same as int but it have larger range of values)
     // long x = 15;
     // cin>> x;
