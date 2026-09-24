@@ -54,8 +54,6 @@
 //     cin>>b;
 //     cout<<"Enter third number: ";
 //     cin>>c;
-
-
 //     if(a>=b && a>=c) {
 //         cout<<"The greater number is: "<<a;
 //     } else if(b>=a && b>=c) {
