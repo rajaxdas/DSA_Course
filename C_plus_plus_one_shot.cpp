@@ -2,7 +2,6 @@
 // using namespace std;
 
 // -------Functions 
-
     // void printName1(string name2){
     //     cout<<"Hey "<<name2 <<endl;
     // } 
