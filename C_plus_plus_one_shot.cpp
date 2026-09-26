@@ -13,7 +13,6 @@
     // int x = 10;
 
 
-
     //long (same as int but it have larger range of values)
     // long x = 15;
     // cin>> x;
