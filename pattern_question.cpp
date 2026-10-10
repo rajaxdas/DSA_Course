@@ -14,7 +14,6 @@
 // }
 
 
-
 //-------->print n stars<--------
 // #include<iostream>
 // using namespace std;
