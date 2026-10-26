@@ -17,7 +17,9 @@
 // }
 
 
+
 // factroial of a number....
+
 // #include<iostream>
 // using namespace std;
 // int main() {
@@ -52,8 +54,6 @@
 //     cin>>b;
 //     cout<<"Enter third number: ";
 //     cin>>c;
-
-
 //     if(a>=b && a>=c) {
 //         cout<<"The greater number is: "<<a;
 //     } else if(b>=a && b>=c) {
@@ -63,5 +63,8 @@
 //     }
 //     return 0; 
 // }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 0d874c993e98b827447b148b9ef4fb4928fe3867

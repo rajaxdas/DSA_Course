@@ -2,13 +2,13 @@
 // using namespace std;
 
 // -------Functions 
-
     // void printName1(string name2){
     //     cout<<"Hey "<<name2 <<endl;
     // } 
     // void printName(string name) {
     //     cout<<"Hey "<<name <<endl;
     // }
+
 // int main() {
     //int (it can only store elements data from(-2,147,483,648 to 2,147,483,647))
     // int x = 10;
