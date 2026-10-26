@@ -193,33 +193,78 @@
 
 
 
+//-------->print 0 and 1<--------
+// #include <iostream>
+// using namespace std;
+
+// void print9(int n) {
+//     for (int i = 0; i < n; i++) {
+//         int start = (i % 2 == 0) ? 0 : 1;
+
+//         for (int j = 0; j <= i; j++) {
+//             cout << start;
+//             start = 1 - start;
+//         }
+
+//         cout << endl;
+//     }
+// }
+
+// int main() {
+//     int t;
+//     cin >> t;
+
+//     for (int i = 0; i < t; i++) {
+//         int n;
+//         cin >> n;
+//         print9(n);
+//     }
+
+//     return 0;
+    
+// }
+
+
+
 
 #include <iostream>
 using namespace std;
 
-void print9(int n) {
-    for (int i = 0; i < n; i++) {
-        int start = (i % 2 == 0) ? 0 : 1;
+void print10(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << j;
+        }
 
-        for (int j = 0; j <= i; j++) {
-            cout << start;
-            start = 1 - start;
+        for (int j = 1; j <= 2 * (n - i); j++)
+        {
+            cout << " ";
+        }
+
+        for (int j = i; j >= 1; j--)
+        {
+            cout << j;
         }
 
         cout << endl;
     }
 }
 
-int main() {
+int main()
+{
     int t;
     cin >> t;
 
-    for (int i = 0; i < t; i++) {
+    for (int k = 1; k <= t; k++)
+    {
         int n;
         cin >> n;
-        print9(n);
+        print10(n);
     }
 
     return 0;
-    
 }
+
