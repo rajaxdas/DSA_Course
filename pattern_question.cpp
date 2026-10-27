@@ -225,43 +225,92 @@
 
 
 
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+
+// void print10(int n)
+// {
+//     for (int i = 1; i <= n; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << j;
+//         }
+
+//         for (int j = 1; j <= 2 * (n - i); j++)
+//         {
+//             cout << " ";
+//         }
+
+//         for (int j = i; j >= 1; j--)
+//         {
+//             cout << j;
+//         }
+
+//         cout << endl;
+//     }
+// }
+
+// int main()
+// {
+//     int t;
+//     cin >> t;
+
+//     for (int k = 1; k <= t; k++)
+//     {
+//         int n;
+//         cin >> n;
+//         print10(n);
+//     }
+
+//     return 0;
+// }
+
+// <--------- print 1 to 15 in pyramid
+// #include <iostream> 
+// using namespace std;
+// void print13(int n) {
+//     int num = 1;
+//     for(int i=1; i<=n; i++) {
+//         for(int j=1; j<=i; j++) {
+//             cout<< num << " ";
+//             num = num + 1;
+//         }
+//         cout<<endl;
+//     }
+// }
+
+// int main() {
+//     int t;
+//     cin>> t;
+//     for(int i=0; i<t; i++) {
+//         int n;
+//         cin>>n;
+//         print13(n);
+//     }
+// }
+
+
+
+//<-----print right angle traingle of alphabate
+
+#include<iostream>
 using namespace std;
-
-void print10(int n)
-{
-    for (int i = 1; i <= n; i++)
-    {
-        for (int j = 1; j <= i; j++)
-        {
-            cout << j;
+void print14(int n) {
+    for(int i=0; i<n; i++) {
+        for(char ch = 'A'; ch <='A' + i; ch++) {
+            cout<< ch << " ";
         }
-
-        for (int j = 1; j <= 2 * (n - i); j++)
-        {
-            cout << " ";
-        }
-
-        for (int j = i; j >= 1; j--)
-        {
-            cout << j;
-        }
-
-        cout << endl;
+        cout<<endl;
     }
 }
 
-int main()
-{
+int main() {
     int t;
     cin >> t;
-
-    for (int k = 1; k <= t; k++)
-    {
+    for(int i=0; i<t; i++) {
         int n;
-        cin >> n;
-        print10(n);
+        cin>>n;
+        print14(n);
     }
-
-    return 0;
 }
