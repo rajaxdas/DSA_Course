@@ -294,23 +294,110 @@
 
 //<-----print right angle traingle of alphabate
 
+// #include<iostream>
+// using namespace std;
+// void print14(int n) {
+//     for(int i=0; i<n; i++) {
+//         for(char ch = 'A'; ch <='A' + i; ch++) {
+//             cout<< ch << " ";
+//         }
+//         cout<<endl;
+//     }
+// }
+
+// int main() {
+//     int t;
+//     cin >> t;
+//     for(int i=0; i<t; i++) {
+//         int n;
+//         cin>>n;
+//         print14(n);
+//     }
+// }
+
+
+
+//<-----print reverse right angle traungle of alphabate----->
+
+// #include<iostream>
+// using namespace std;
+// void print15(int n) {
+//     for(int i=0; i<=n; i++) {
+//         for(char ch = 'A'; ch <='A' + (n - i - 1); ch++) {
+//             cout << ch << " ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// int main() {
+//     int t;
+//     cin>>t;
+//     for(int i=0; i<t; i++) {
+//         int n;
+//         cin>>n;
+//         print15(n);
+//     }
+// }
+
+
+//<-------print alphabate multiple times in pyramid-------->
+
+// #include<iostream>
+// using namespace std;
+// void print16(int n) {
+//     for(int i=0; i<=n; i++) {
+//         char ch = 'A' + i;
+//         for(int j=0; j<=i; j++){
+//             cout << ch << " ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// int main() {
+//     int t;
+//     cin>>t;
+//     for(int i=0; i<t; i++) {
+//         int n;
+//         cin>>n;
+//         print16(n);
+//     }
+// }
+
+
+//<----Print alphabate pyramid---->
+
 #include<iostream>
 using namespace std;
-void print14(int n) {
-    for(int i=0; i<n; i++) {
-        for(char ch = 'A'; ch <='A' + i; ch++) {
-            cout<< ch << " ";
+void print17(int n) {
+    for(int i=0; i<=n; i++) {
+
+        //Spaces
+        for(int j=0; j<n-i-1; j++) {
+            cout << " ";
+        }
+
+        //Character
+        char ch = 'A';
+        for(int j = 0; j<2*n+1; j++) {
+            cout<<ch;
+        }
+
+        //Spaces
+        for(int j=0; j<n-i-1; j++) {
+            cout<< " ";
         }
         cout<<endl;
     }
 }
 
 int main() {
-    int t;
-    cin >> t;
-    for(int i=0; i<t; i++) {
-        int n;
-        cin>>n;
-        print14(n);
-    }
-}
+     int t;
+     cin>>t;
+     for(int i=0; i<t; i++) {
+         int n;
+         cin>>n;
+         print17(n);
+     }
+ }
